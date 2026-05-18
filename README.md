@@ -77,3 +77,22 @@ http://localhost:8000/
 ```
 
 `index.html` を直接ダブルクリックするとCSV読み込みが失敗することがあります。
+
+
+## 引用文献の管理
+
+引用論文は `data/references.csv` にまとめます。
+
+- `reference_id`：文献ID。例：`Hirayama2022_JMPS`
+- `short_citation`：画面に出す短い引用。例：`Hirayama et al. (2022)`
+- `doi` / `url`：DOIやリンク
+- `note`：どのデータ・図に由来するか
+
+各試料は `data/samples.csv` の `reference_id` で文献と対応させます。
+
+例：
+
+```csv
+sample_id,area,lithology,reference_id,source_reference
+HX12-03,姫島,Gabbro,Hirayama2022_JMPS,Hirayama et al. (2022)
+```

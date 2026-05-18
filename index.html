@@ -50,6 +50,7 @@ th{background:#eceff1;position:sticky;top:0;z-index:1}
     <button class="tab" data-target="areas">地域別表示</button>
     <button class="tab" data-target="samples">試料別表示</button>
     <button class="tab" data-target="photos">写真一覧</button>
+    <button class="tab" data-target="references">引用文献</button>
   </div>
 
   <section id="overview" class="panel">
@@ -81,6 +82,14 @@ th{background:#eceff1;position:sticky;top:0;z-index:1}
     </div>
     <div id="photoApp" class="gallery"></div>
   </section>
+
+  <section id="references" class="panel hidden">
+    <div class="card">
+      <h2>引用文献</h2>
+      <p class="small">各試料のデータ出典を確認できます。データを追加する場合は、data/references.csv に文献情報を追加し、data/samples.csv の reference_id と対応させてください。</p>
+      <div id="referenceApp"></div>
+    </div>
+  </section>
 </div>
 
 <script>
@@ -88,10 +97,11 @@ const DATA = {
   samples: "data/samples.csv",
   major: "data/major_elements.csv",
   trace: "data/trace_elements.csv",
-  images: "data/images.csv"
+  images: "data/images.csv",
+  references: "data/references.csv"
 };
 
-let samples = [], major = [], trace = [], images = [];
+let samples = [], major = [], trace = [], images = [], references = [];
 
 function cleanHeader(h){ return String(h || "").replace(/^\uFEFF/, "").trim(); }
 
@@ -166,6 +176,7 @@ function makeOverview(){
   rows.push(["area","area",...samples.map(s => s.area || "")]);
   rows.push(["geologic unit","unit",...samples.map(s => s.geologic_unit || "")]);
   rows.push(["sample type","type",...samples.map(s => s.sample_type || "")]);
+  rows.push(["reference","source",...samples.map(s => s.source_reference || s.reference_id || "")]);
   rows.push(["sample","sample_id",...sampleIds]);
 
   const majorKeys = major.length ? Object.keys(major[0]).filter(k => k !== "sample_id") : [];
@@ -178,7 +189,7 @@ function makeOverview(){
 
   document.getElementById("overviewTable").innerHTML =
     "<table><tbody>" + rows.map((r,i) =>
-      "<tr>" + r.map((c,j) => (i<5 || j<2) ? `<th>${escapeHTML(c)}</th>` : `<td>${escapeHTML(c)}</td>`).join("") + "</tr>"
+      "<tr>" + r.map((c,j) => (i<6 || j<2) ? `<th>${escapeHTML(c)}</th>` : `<td>${escapeHTML(c)}</td>`).join("") + "</tr>"
     ).join("") + "</tbody></table>";
 }
 
@@ -197,6 +208,41 @@ function chemTable(obj){
     .map(([k,v]) => `<tr><td>${escapeHTML(k)}</td><td>${escapeHTML(v)}</td></tr>`)
     .join("");
   return rows ? `<table><tbody>${rows}</tbody></table>` : "<p class='small'>No data.</p>";
+}
+
+
+function referenceTextForSample(s){
+  const ref = references.find(r => r.reference_id && r.reference_id === s.reference_id);
+  if(ref){
+    const doi = ref.doi ? ` DOI: ${ref.doi}` : "";
+    return `${ref.short_citation || ref.reference_id}${doi}`;
+  }
+  return s.source_reference || s.reference_id || "";
+}
+
+function renderReferences(){
+  const app = document.getElementById("referenceApp");
+  if(!app) return;
+  if(!references.length){
+    const uniqueRefs = [...new Set(samples.map(s => s.source_reference || s.reference_id).filter(Boolean))];
+    app.innerHTML = uniqueRefs.length
+      ? "<ul>" + uniqueRefs.map(r => `<li>${escapeHTML(r)}</li>`).join("") + "</ul>"
+      : "<p class='small'>No reference data.</p>";
+    return;
+  }
+  app.innerHTML = references.map(r => {
+    const linked = samples.filter(s => s.reference_id === r.reference_id || s.source_reference === r.short_citation).map(s => s.sample_id);
+    const doiLink = r.url ? `<a href="${escapeHTML(r.url)}" target="_blank" rel="noopener">${escapeHTML(r.doi || r.url)}</a>` : escapeHTML(r.doi || "");
+    return `<div class="card">
+      <h3>${escapeHTML(r.short_citation || r.reference_id || "")}</h3>
+      <p>${escapeHTML(r.authors || "")} ${escapeHTML(r.year ? "(" + r.year + ")" : "")}<br>
+      <b>${escapeHTML(r.title || "")}</b><br>
+      ${escapeHTML(r.journal || "")}${r.volume ? ", " + escapeHTML(r.volume) : ""}${r.article_or_pages ? ", " + escapeHTML(r.article_or_pages) : ""}<br>
+      ${doiLink ? "DOI: " + doiLink + "<br>" : ""}
+      <span class="small">${escapeHTML(r.note || "")}</span></p>
+      <p class="small"><b>Linked samples:</b> ${escapeHTML(linked.join(", ") || "none")}</p>
+    </div>`;
+  }).join("");
 }
 
 function renderSamples(){
@@ -223,7 +269,7 @@ function renderSamples(){
       <p class="small"><b>Locality:</b> ${escapeHTML(s.locality || "")}<br>
       <b>Geologic unit:</b> ${escapeHTML(s.geologic_unit || "")}<br>
       <b>Folder:</b> ${escapeHTML(s.sample_folder || "")}<br>
-      <b>Reference:</b> ${escapeHTML(s.source_reference || "")}</p>
+      <b>Reference:</b> ${escapeHTML(referenceTextForSample(s))}</p>
       <div class="chemgrid">
         <div class="chembox">
           <h3>Major elements</h3>
@@ -237,7 +283,7 @@ function renderSamples(){
       <h3>Images</h3>
       <div class="gallery">${ims.length ? ims.map(im => `<figure>
         <img src="${escapeHTML(im.file_path)}" alt="${escapeHTML(im.image_type)}">
-        <figcaption>${escapeHTML(im.image_type)}<br>${escapeHTML(im.caption || "")}</figcaption>
+        <figcaption>${escapeHTML(im.image_type)}<br>${escapeHTML(im.caption || "")}<br><span class="small">${escapeHTML(im.source || "")}</span></figcaption>
       </figure>`).join("") : "<p class='small'>No linked images yet.</p>"}</div>
     </section>`;
   }).join("");
@@ -280,7 +326,7 @@ function renderPhotos(){
       <img src="${escapeHTML(im.file_path)}" alt="${escapeHTML(im.image_type)}">
       <figcaption><b>${escapeHTML(im.sample_id)}</b>
       ${s.area ? `<span class="tag">${escapeHTML(s.area)}</span>` : ""}
-      <br>${escapeHTML(im.image_type || "")}<br>${escapeHTML(im.caption || "")}</figcaption>
+      <br>${escapeHTML(im.image_type || "")}<br>${escapeHTML(im.caption || "")}<br><span class="small">${escapeHTML(im.source || "")}</span></figcaption>
     </figure>`;
   }).join("");
 }
@@ -297,8 +343,12 @@ function bindTabs(){
 async function init(){
   bindTabs();
   try{
-    [samples, major, trace, images] = await Promise.all([
-      loadCSV(DATA.samples), loadCSV(DATA.major), loadCSV(DATA.trace), loadCSV(DATA.images)
+    [samples, major, trace, images, references] = await Promise.all([
+      loadCSV(DATA.samples),
+      loadCSV(DATA.major),
+      loadCSV(DATA.trace),
+      loadCSV(DATA.images),
+      loadCSV(DATA.references).catch(() => [])
     ]);
     enrichSamples();
 
@@ -311,6 +361,7 @@ async function init(){
     renderAreas();
     renderSamples();
     renderPhotos();
+    renderReferences();
 
     ["q","areaFilter","lithFilter","typeFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderSamples));
     ["photoQ","photoAreaFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderPhotos));
