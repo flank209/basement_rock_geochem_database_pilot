@@ -27,6 +27,13 @@ th{background:#eceff1;position:sticky;top:0;z-index:1}
 .small{font-size:12px;color:var(--muted)}
 .error{background:#fff3e0;border:1px solid #ffcc80;color:#4e342e;padding:12px;border-radius:10px;margin:14px 0}
 .ok{background:#e8f5e9;border:1px solid #a5d6a7;color:#1b5e20;padding:10px;border-radius:10px;margin:14px 0}
+
+.chemgrid{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:16px;align-items:start}
+.chemgrid h3{margin-top:0}
+.chembox{min-width:0}
+.chembox .tablewrap{max-height:420px}
+@media (max-width:800px){.chemgrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -217,8 +224,16 @@ function renderSamples(){
       <b>Geologic unit:</b> ${escapeHTML(s.geologic_unit || "")}<br>
       <b>Folder:</b> ${escapeHTML(s.sample_folder || "")}<br>
       <b>Reference:</b> ${escapeHTML(s.source_reference || "")}</p>
-      <h3>Major elements</h3>${chemTable(majorBy[s.sample_id])}
-      <h3>Trace elements</h3>${chemTable(traceBy[s.sample_id])}
+      <div class="chemgrid">
+        <div class="chembox">
+          <h3>Major elements</h3>
+          <div class="tablewrap">${chemTable(majorBy[s.sample_id])}</div>
+        </div>
+        <div class="chembox">
+          <h3>Trace elements</h3>
+          <div class="tablewrap">${chemTable(traceBy[s.sample_id])}</div>
+        </div>
+      </div>
       <h3>Images</h3>
       <div class="gallery">${ims.length ? ims.map(im => `<figure>
         <img src="${escapeHTML(im.file_path)}" alt="${escapeHTML(im.image_type)}">
