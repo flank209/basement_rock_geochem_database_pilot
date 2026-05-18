@@ -1,0 +1,7 @@
+﻿file,column,description
+samples.csv,sample_id,Permanent sample number / primary key. Do not change after publication.
+samples.csv,lithology,Rock type from Table 1 / paper classification.
+major_elements.csv,*_wt,Major-element oxide concentration in wt%.
+trace_elements.csv,*_ppm,Trace-element concentration in ppm. Blank indicates n.d. or bdl in the source table.
+geochemistry_long.csv,qualifier,n.d. = not determined; bdl = below detection limit.
+images.csv,file_path,Relative file path from repository root.

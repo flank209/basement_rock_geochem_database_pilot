@@ -1,0 +1,17 @@
+﻿sample_id,lithology,locality,sample_folder,has_rock_photo,has_thin_section_ppl,has_thin_section_xpl,rock_photo_path,thin_section_ppl_path,thin_section_xpl_path,source_reference
+HX12-03,Gabbro,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-03/,yes,yes,yes,samples/HX12-03/HX12-03_rock_from_Fig2.jpg,samples/HX12-03/HX12-03_PPL_from_Fig2.jpg,samples/HX12-03/HX12-03_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-04,Gabbro,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-04/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-09a,Gabbro,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-09a/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-10a,Gabbro,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-10a/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-10b,Gabbro,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-10b/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-08b,Gabbroic Diorite,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-08b/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-08c,Gabbroic Diorite,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-08c/,yes,yes,yes,samples/HX12-08c/HX12-08c_rock_from_Fig2.jpg,samples/HX12-08c/HX12-08c_PPL_from_Fig2.jpg,samples/HX12-08c/HX12-08c_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-12,Gabbroic Diorite,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-12/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-18,Amp gneiss,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-18/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-20,Amp gneiss,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-20/,yes,yes,yes,samples/HX12-20/HX12-20_rock_from_Fig2.jpg,samples/HX12-20/HX12-20_PPL_from_Fig2.jpg,samples/HX12-20/HX12-20_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-21,Amp gneiss,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-21/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-22,Amp gneiss,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-22/,no,no,no,,,,Hirayama et al. 2022 JMPS
+HX12-PE,Grt gneiss,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-PE/,yes,yes,yes,samples/HX12-PE/HX12-PE_rock_from_Fig2.jpg,samples/HX12-PE/HX12-PE_PPL_from_Fig2.jpg,samples/HX12-PE/HX12-PE_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-23,Amphibolite,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-23/,yes,yes,yes,samples/HX12-23/HX12-23_rock_from_Fig2.jpg,samples/HX12-23/HX12-23_PPL_from_Fig2.jpg,samples/HX12-23/HX12-23_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-01,Basaltic andesite,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-01/,yes,yes,yes,samples/HX12-01/HX12-01_rock_from_Fig2.jpg,samples/HX12-01/HX12-01_PPL_from_Fig2.jpg,samples/HX12-01/HX12-01_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS
+HX12-19,Tuffaceous sandstone,"Hime-shima volcanic group, Kane lava coastal boulders",samples/HX12-19/,yes,yes,yes,samples/HX12-19/HX12-19_rock_from_Fig2.jpg,samples/HX12-19/HX12-19_PPL_from_Fig2.jpg,samples/HX12-19/HX12-19_XPL_from_Fig2.jpg,Hirayama et al. 2022 JMPS

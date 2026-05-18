@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>基盤岩地球化学データベース</title>
+<style>
+:root{--main:#263238;--bg:#f7f7f5;--card:#fff;--line:#ddd;--muted:#666}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:var(--bg);color:#222}
+header{background:var(--main);color:white;padding:22px 28px}
+header h1{margin:0 0 6px}
+.wrap{max-width:1280px;margin:auto;padding:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:0 1px 4px #0001}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 20px}
+input,select,button{padding:8px;border:1px solid #bbb;border-radius:8px;background:white}
+button{cursor:pointer}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.tab.active{background:var(--main);color:white}
+.hidden{display:none}
+table{border-collapse:collapse;width:100%;font-size:12px}
+th,td{border:1px solid var(--line);padding:5px;text-align:left;white-space:nowrap}
+th{background:#eceff1;position:sticky;top:0;z-index:1}
+.tablewrap{overflow:auto;max-height:620px;border:1px solid var(--line);border-radius:10px;background:white}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.gallery img{max-width:100%;border-radius:10px;border:1px solid var(--line);background:#eee}
+.tag{display:inline-block;background:#e3f2fd;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:4px}
+.small{font-size:12px;color:var(--muted)}
+.error{background:#fff3e0;border:1px solid #ffcc80;color:#4e342e;padding:12px;border-radius:10px;margin:14px 0}
+.ok{background:#e8f5e9;border:1px solid #a5d6a7;color:#1b5e20;padding:10px;border-radius:10px;margin:14px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>基盤岩地球化学データベース</h1>
+  <div class="small" style="color:#dfe7ea">CSVを編集すると表示内容が更新されます。</div>
+</header>
+
+<div class="wrap">
+  <div id="status" class="small">CSVを読み込み中...</div>
+
+  <div class="tabs">
+    <button class="tab active" data-target="overview">基盤岩データ一覧</button>
+    <button class="tab" data-target="areas">地域別表示</button>
+    <button class="tab" data-target="samples">試料別表示</button>
+    <button class="tab" data-target="photos">写真一覧</button>
+  </div>
+
+  <section id="overview" class="panel">
+    <div class="card">
+      <h2>基盤岩データ一覧</h2>
+      <p class="small">列が試料、行が地域・岩相・主要元素・微量元素です。</p>
+      <div class="tablewrap" id="overviewTable"></div>
+    </div>
+  </section>
+
+  <section id="areas" class="panel hidden">
+    <div id="areaApp"></div>
+  </section>
+
+  <section id="samples" class="panel hidden">
+    <div class="controls">
+      <input id="q" placeholder="Search sample ID, area, lithology">
+      <select id="areaFilter"><option value="">All areas</option></select>
+      <select id="lithFilter"><option value="">All lithologies</option></select>
+      <select id="typeFilter"><option value="">All sample types</option></select>
+    </div>
+    <div id="sampleApp"></div>
+  </section>
+
+  <section id="photos" class="panel hidden">
+    <div class="controls">
+      <input id="photoQ" placeholder="Search sample ID or caption">
+      <select id="photoAreaFilter"><option value="">All areas</option></select>
+    </div>
+    <div id="photoApp" class="gallery"></div>
+  </section>
+</div>
+
+<script>
+const DATA = {
+  samples: "data/samples.csv",
+  major: "data/major_elements.csv",
+  trace: "data/trace_elements.csv",
+  images: "data/images.csv"
+};
+
+let samples = [], major = [], trace = [], images = [];
+
+function cleanHeader(h){ return String(h || "").replace(/^\uFEFF/, "").trim(); }
+
+function parseCSV(text){
+  const rows = [];
+  let row = [], cell = "", inQuotes = false;
+  for(let i=0; i<text.length; i++){
+    const c = text[i], n = text[i+1];
+    if(inQuotes){
+      if(c === '"' && n === '"'){ cell += '"'; i++; }
+      else if(c === '"'){ inQuotes = false; }
+      else { cell += c; }
+    }else{
+      if(c === '"'){ inQuotes = true; }
+      else if(c === ","){ row.push(cell); cell = ""; }
+      else if(c === "\n"){ row.push(cell); rows.push(row); row = []; cell = ""; }
+      else if(c !== "\r"){ cell += c; }
+    }
+  }
+  if(cell.length || row.length){ row.push(cell); rows.push(row); }
+  if(!rows.length) return [];
+  const headers = rows[0].map(cleanHeader);
+  return rows.slice(1)
+    .filter(r => r.some(v => String(v).trim() !== ""))
+    .map(r => Object.fromEntries(headers.map((h,i)=>[h, (r[i] ?? "").trim()])));
+}
+
+async function loadCSV(path){
+  const res = await fetch(path, {cache:"no-store"});
+  if(!res.ok) throw new Error(`${path} を読み込めませんでした`);
+  return parseCSV(await res.text());
+}
+
+function escapeHTML(s){
+  return String(s ?? "").replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+}
+
+function inferArea(s){
+  if(s.area) return s.area;
+  const text = `${s.locality||""} ${s.sample_id||""}`.toLowerCase();
+  if(text.includes("hime") || text.includes("hx12") || text.includes("姫島")) return "姫島";
+  if(text.includes("aso") || text.includes("阿蘇")) return "阿蘇";
+  if(text.includes("kuju") || text.includes("九重")) return "九重";
+  if(text.includes("futago") || text.includes("両子")) return "両子山";
+  if(text.includes("arima") || text.includes("有馬")) return "有馬";
+  if(text.includes("beppu") || text.includes("別府")) return "別府";
+  return "未分類";
+}
+
+function enrichSamples(){
+  samples = samples.map(s => ({
+    ...s,
+    area: inferArea(s),
+    geologic_unit: s.geologic_unit || "",
+    sample_type: s.sample_type || "",
+    sample_folder: (s.sample_folder || `samples/${s.sample_id}/`).replace(/^\.?\//,"")
+  }));
+}
+
+function byId(arr){ return Object.fromEntries(arr.map(x => [x.sample_id, x])); }
+
+function elementLabel(key){
+  return key.replace("_wt","").replace("_ppm","").replace("Fe2O3","Fe2O3*");
+}
+
+function makeOverview(){
+  const majorBy = byId(major), traceBy = byId(trace);
+  const sampleIds = samples.map(s => s.sample_id);
+
+  const rows = [];
+  rows.push(["category","unit/analyte",...samples.map(s => s.lithology || "")]);
+  rows.push(["area","area",...samples.map(s => s.area || "")]);
+  rows.push(["geologic unit","unit",...samples.map(s => s.geologic_unit || "")]);
+  rows.push(["sample type","type",...samples.map(s => s.sample_type || "")]);
+  rows.push(["sample","sample_id",...sampleIds]);
+
+  const majorKeys = major.length ? Object.keys(major[0]).filter(k => k !== "sample_id") : [];
+  rows.push(["major elements","wt%",...sampleIds.map(_=>"")]);
+  majorKeys.forEach(k => rows.push(["major elements", elementLabel(k), ...sampleIds.map(id => majorBy[id]?.[k] || "")]));
+
+  const traceKeys = trace.length ? Object.keys(trace[0]).filter(k => k !== "sample_id") : [];
+  rows.push(["trace elements","ppm",...sampleIds.map(_=>"")]);
+  traceKeys.forEach(k => rows.push(["trace elements", elementLabel(k), ...sampleIds.map(id => traceBy[id]?.[k] || "")]));
+
+  document.getElementById("overviewTable").innerHTML =
+    "<table><tbody>" + rows.map((r,i) =>
+      "<tr>" + r.map((c,j) => (i<5 || j<2) ? `<th>${escapeHTML(c)}</th>` : `<td>${escapeHTML(c)}</td>`).join("") + "</tr>"
+    ).join("") + "</tbody></table>";
+}
+
+function fillSelect(id, values){
+  const el = document.getElementById(id);
+  [...new Set(values)].filter(Boolean).sort().forEach(v => {
+    const o = document.createElement("option");
+    o.value = v; o.textContent = v; el.appendChild(o);
+  });
+}
+
+function chemTable(obj){
+  if(!obj) return "<p class='small'>No data.</p>";
+  const rows = Object.entries(obj)
+    .filter(([k,v]) => k !== "sample_id" && v !== "" && v != null)
+    .map(([k,v]) => `<tr><td>${escapeHTML(k)}</td><td>${escapeHTML(v)}</td></tr>`)
+    .join("");
+  return rows ? `<table><tbody>${rows}</tbody></table>` : "<p class='small'>No data.</p>";
+}
+
+function renderSamples(){
+  const q = document.getElementById("q").value.toLowerCase();
+  const area = document.getElementById("areaFilter").value;
+  const lith = document.getElementById("lithFilter").value;
+  const type = document.getElementById("typeFilter").value;
+  const majorBy = byId(major), traceBy = byId(trace);
+
+  const filtered = samples.filter(s => {
+    const text = `${s.sample_id} ${s.area} ${s.locality} ${s.lithology} ${s.geologic_unit} ${s.sample_type}`.toLowerCase();
+    return (!q || text.includes(q)) && (!area || s.area === area) && (!lith || s.lithology === lith) && (!type || s.sample_type === type);
+  });
+
+  document.getElementById("sampleApp").innerHTML = filtered.map(s => {
+    const ims = images.filter(im => im.sample_id === s.sample_id);
+    return `<section class="card">
+      <h2>${escapeHTML(s.sample_id)}
+        ${s.area ? `<span class="tag">${escapeHTML(s.area)}</span>` : ""}
+        ${s.lithology ? `<span class="tag">${escapeHTML(s.lithology)}</span>` : ""}
+        ${s.sample_type ? `<span class="tag">${escapeHTML(s.sample_type)}</span>` : ""}
+      </h2>
+      <p>${escapeHTML(s.petrographic_note || "")}</p>
+      <p class="small"><b>Locality:</b> ${escapeHTML(s.locality || "")}<br>
+      <b>Geologic unit:</b> ${escapeHTML(s.geologic_unit || "")}<br>
+      <b>Folder:</b> ${escapeHTML(s.sample_folder || "")}<br>
+      <b>Reference:</b> ${escapeHTML(s.source_reference || "")}</p>
+      <h3>Major elements</h3>${chemTable(majorBy[s.sample_id])}
+      <h3>Trace elements</h3>${chemTable(traceBy[s.sample_id])}
+      <h3>Images</h3>
+      <div class="gallery">${ims.length ? ims.map(im => `<figure>
+        <img src="${escapeHTML(im.file_path)}" alt="${escapeHTML(im.image_type)}">
+        <figcaption>${escapeHTML(im.image_type)}<br>${escapeHTML(im.caption || "")}</figcaption>
+      </figure>`).join("") : "<p class='small'>No linked images yet.</p>"}</div>
+    </section>`;
+  }).join("");
+}
+
+function renderAreas(){
+  const areas = [...new Set(samples.map(s => s.area || "未分類"))].sort();
+  document.getElementById("areaApp").innerHTML = areas.map(area => {
+    const ss = samples.filter(s => (s.area || "未分類") === area);
+    return `<section class="card">
+      <h2>${escapeHTML(area)}</h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>sample_id</th><th>lithology</th><th>sample_type</th><th>geologic_unit</th><th>locality</th></tr></thead>
+        <tbody>${ss.map(s => `<tr>
+          <td>${escapeHTML(s.sample_id)}</td>
+          <td>${escapeHTML(s.lithology || "")}</td>
+          <td>${escapeHTML(s.sample_type || "")}</td>
+          <td>${escapeHTML(s.geologic_unit || "")}</td>
+          <td>${escapeHTML(s.locality || "")}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </section>`;
+  }).join("");
+}
+
+function renderPhotos(){
+  const q = document.getElementById("photoQ").value.toLowerCase();
+  const area = document.getElementById("photoAreaFilter").value;
+  const sampleBy = byId(samples);
+
+  const filtered = images.filter(im => {
+    const s = sampleBy[im.sample_id] || {};
+    const text = `${im.sample_id} ${s.area || ""} ${im.image_type || ""} ${im.caption || ""}`.toLowerCase();
+    return (!q || text.includes(q)) && (!area || s.area === area);
+  });
+
+  document.getElementById("photoApp").innerHTML = filtered.map(im => {
+    const s = sampleBy[im.sample_id] || {};
+    return `<figure class="card">
+      <img src="${escapeHTML(im.file_path)}" alt="${escapeHTML(im.image_type)}">
+      <figcaption><b>${escapeHTML(im.sample_id)}</b>
+      ${s.area ? `<span class="tag">${escapeHTML(s.area)}</span>` : ""}
+      <br>${escapeHTML(im.image_type || "")}<br>${escapeHTML(im.caption || "")}</figcaption>
+    </figure>`;
+  }).join("");
+}
+
+function bindTabs(){
+  document.querySelectorAll(".tab").forEach(btn => btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.querySelectorAll(".panel").forEach(p => p.classList.add("hidden"));
+    document.getElementById(btn.dataset.target).classList.remove("hidden");
+  }));
+}
+
+async function init(){
+  bindTabs();
+  try{
+    [samples, major, trace, images] = await Promise.all([
+      loadCSV(DATA.samples), loadCSV(DATA.major), loadCSV(DATA.trace), loadCSV(DATA.images)
+    ]);
+    enrichSamples();
+
+    fillSelect("areaFilter", samples.map(s => s.area));
+    fillSelect("photoAreaFilter", samples.map(s => s.area));
+    fillSelect("lithFilter", samples.map(s => s.lithology));
+    fillSelect("typeFilter", samples.map(s => s.sample_type));
+
+    makeOverview();
+    renderAreas();
+    renderSamples();
+    renderPhotos();
+
+    ["q","areaFilter","lithFilter","typeFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderSamples));
+    ["photoQ","photoAreaFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderPhotos));
+
+    document.getElementById("status").innerHTML = "<span class='ok'>CSVを読み込みました。データを変更する場合は data フォルダ内のCSVを編集してください。</span>";
+  }catch(e){
+    document.getElementById("status").innerHTML =
+      `<div class="error"><b>CSV読み込みエラー:</b> ${escapeHTML(e.message)}<br>
+      このページはCSVを読み込むため、index.htmlを直接ダブルクリックでは動かない場合があります。<br>
+      <b>start_local_server.bat</b> を実行してから、表示されたURLを開いてください。</div>`;
+  }
+}
+init();
+</script>
+</body>
+</html>

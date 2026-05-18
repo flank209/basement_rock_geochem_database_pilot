@@ -1,0 +1,22 @@
+﻿sample_id,image_type,file_path,source,caption
+HX12-01,rock_photo,samples/HX12-01/HX12-01_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Basaltic andesite; Figure 2a
+HX12-01,thin_section_ppl,samples/HX12-01/HX12-01_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Basaltic andesite; Figure 2a
+HX12-01,thin_section_xpl,samples/HX12-01/HX12-01_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Basaltic andesite; Figure 2a
+HX12-19,rock_photo,samples/HX12-19/HX12-19_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Tuffaceous sandstone; Figure 2b
+HX12-19,thin_section_ppl,samples/HX12-19/HX12-19_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Tuffaceous sandstone; Figure 2b
+HX12-19,thin_section_xpl,samples/HX12-19/HX12-19_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Tuffaceous sandstone; Figure 2b
+HX12-03,rock_photo,samples/HX12-03/HX12-03_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbro; Figure 2c
+HX12-03,thin_section_ppl,samples/HX12-03/HX12-03_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbro; Figure 2c
+HX12-03,thin_section_xpl,samples/HX12-03/HX12-03_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbro; Figure 2c
+HX12-08c,rock_photo,samples/HX12-08c/HX12-08c_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbroic diorite; Figure 2d
+HX12-08c,thin_section_ppl,samples/HX12-08c/HX12-08c_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbroic diorite; Figure 2d
+HX12-08c,thin_section_xpl,samples/HX12-08c/HX12-08c_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Gabbroic diorite; Figure 2d
+HX12-23,rock_photo,samples/HX12-23/HX12-23_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibolite; Figure 2e
+HX12-23,thin_section_ppl,samples/HX12-23/HX12-23_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibolite; Figure 2e
+HX12-23,thin_section_xpl,samples/HX12-23/HX12-23_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibolite; Figure 2e
+HX12-20,rock_photo,samples/HX12-20/HX12-20_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibole gneiss; Figure 2f
+HX12-20,thin_section_ppl,samples/HX12-20/HX12-20_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibole gneiss; Figure 2f
+HX12-20,thin_section_xpl,samples/HX12-20/HX12-20_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Amphibole gneiss; Figure 2f
+HX12-PE,rock_photo,samples/HX12-PE/HX12-PE_rock_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Garnet gneiss; Figure 2g
+HX12-PE,thin_section_ppl,samples/HX12-PE/HX12-PE_PPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Garnet gneiss; Figure 2g
+HX12-PE,thin_section_xpl,samples/HX12-PE/HX12-PE_XPL_from_Fig2.jpg,Hirayama et al. (2022) Fig. 2,Garnet gneiss; Figure 2g

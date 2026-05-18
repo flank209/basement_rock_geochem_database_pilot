@@ -1,0 +1,497 @@
+﻿sample_id,lithology,analyte,value,unit,qualifier,method,source_table
+HX12-03,Gabbro,SiO2,50.54,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,TiO2,1.39,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,Al2O3,18.2,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,Fe2O3,11.87,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,MnO,0.28,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,MgO,6.01,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,CaO,8.65,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,Na2O,2.72,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,K2O,0.5,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,P2O5,0.31,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,LOI,0.03,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,Total,100.49,wt%,,XRF/fused bead,Table 1
+HX12-03,Gabbro,Rb,7.83,ppm,,XRF,Table 1
+HX12-03,Gabbro,Sr,368.0,ppm,,XRF,Table 1
+HX12-03,Gabbro,Y,26.3,ppm,,XRF,Table 1
+HX12-03,Gabbro,Zr,56.7,ppm,,XRF,Table 1
+HX12-03,Gabbro,Nb,7.23,ppm,,XRF,Table 1
+HX12-03,Gabbro,Ba,137.0,ppm,,XRF,Table 1
+HX12-03,Gabbro,Cs,0.222,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Pb,17.8,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Th,0.24,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,U,0.0534,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,La,7.57,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Ce,17.9,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Pr,2.38,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Nd,10.9,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Sm,2.78,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Eu,0.928,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Dy,3.82,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Yb,2.42,ppm,,Q-ICP-MS,Table 1
+HX12-03,Gabbro,Lu,0.359,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,SiO2,50.71,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,TiO2,1.18,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,Al2O3,19.42,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,Fe2O3,10.53,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,MnO,0.14,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,MgO,5.73,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,CaO,8.91,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,Na2O,2.88,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,K2O,0.64,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,P2O5,0.28,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,LOI,0.42,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,Total,100.85,wt%,,XRF/fused bead,Table 1
+HX12-04,Gabbro,Rb,9.94,ppm,,XRF,Table 1
+HX12-04,Gabbro,Sr,878.0,ppm,,XRF,Table 1
+HX12-04,Gabbro,Y,23.3,ppm,,XRF,Table 1
+HX12-04,Gabbro,Zr,86.6,ppm,,XRF,Table 1
+HX12-04,Gabbro,Nb,5.37,ppm,,XRF,Table 1
+HX12-04,Gabbro,Ba,510.0,ppm,,XRF,Table 1
+HX12-04,Gabbro,Cs,0.302,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Pb,4.68,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Th,3.55,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,U,0.39,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,La,11.5,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Ce,31.2,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Pr,4.02,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Nd,18.9,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Sm,4.65,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Eu,1.46,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Dy,3.84,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Yb,1.79,ppm,,Q-ICP-MS,Table 1
+HX12-04,Gabbro,Lu,0.248,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,SiO2,48.87,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,TiO2,0.69,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,Al2O3,14.82,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,Fe2O3,15.06,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,MnO,0.34,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,MgO,10.13,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,CaO,8.06,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,Na2O,1.37,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,K2O,0.39,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,P2O5,0.07,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,LOI,0.5,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,Total,100.28,wt%,,XRF/fused bead,Table 1
+HX12-09a,Gabbro,Rb,10.8,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Sr,220.0,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Y,34.9,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Zr,35.1,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Nb,8.68,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Ba,340.0,ppm,,XRF,Table 1
+HX12-09a,Gabbro,Cs,0.141,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Pb,6.56,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Th,0.63,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,U,0.165,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,La,6.8,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Ce,21.4,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Pr,3.24,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Nd,15.5,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Sm,4.33,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Eu,1.19,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Dy,5.45,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Yb,3.09,ppm,,Q-ICP-MS,Table 1
+HX12-09a,Gabbro,Lu,0.459,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,SiO2,48.06,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,TiO2,0.59,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,Al2O3,16.34,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,Fe2O3,14.94,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,MnO,0.32,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,MgO,9.35,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,CaO,9.14,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,Na2O,1.48,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,K2O,0.27,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,P2O5,0.05,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,LOI,0.21,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,Total,100.75,wt%,,XRF/fused bead,Table 1
+HX12-10a,Gabbro,Rb,5.74,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Sr,282.0,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Y,16.3,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Zr,29.1,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Nb,4.02,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Ba,76.0,ppm,,XRF,Table 1
+HX12-10a,Gabbro,Cs,0.083,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Pb,4.88,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Th,0.201,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,U,0.0873,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,La,3.96,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Ce,11.4,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Pr,1.74,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Nd,8.5,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Sm,2.46,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Eu,0.756,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Dy,2.59,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Yb,1.31,ppm,,Q-ICP-MS,Table 1
+HX12-10a,Gabbro,Lu,0.188,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,SiO2,48.29,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,TiO2,0.48,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,Al2O3,17.37,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,Fe2O3,13.24,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,MnO,0.33,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,MgO,8.98,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,CaO,9.41,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,Na2O,1.63,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,K2O,0.28,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,P2O5,0.06,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,LOI,0.15,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,Total,100.21,wt%,,XRF/fused bead,Table 1
+HX12-10b,Gabbro,Rb,5.9,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Sr,328.0,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Y,14.1,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Zr,20.9,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Nb,3.56,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Ba,85.1,ppm,,XRF,Table 1
+HX12-10b,Gabbro,Cs,0.0876,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Pb,4.73,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Th,0.218,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,U,0.0963,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,La,4.32,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Ce,11.5,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Pr,1.65,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Nd,7.87,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Sm,1.91,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Eu,0.832,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Dy,2.05,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Yb,1.3,ppm,,Q-ICP-MS,Table 1
+HX12-10b,Gabbro,Lu,0.196,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,SiO2,53.68,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,TiO2,0.84,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,Al2O3,16.09,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,Fe2O3,7.84,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,MnO,0.13,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,MgO,5.1,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,CaO,8.24,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,Na2O,3.31,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,K2O,1.3,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,P2O5,0.21,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,LOI,0.25,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,Total,97.0,wt%,,XRF/fused bead,Table 1
+HX12-08b,Gabbroic Diorite,Rb,23.4,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Sr,696.0,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Y,14.9,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Zr,94.2,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Nb,6.86,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Ba,453.0,ppm,,XRF,Table 1
+HX12-08b,Gabbroic Diorite,Cs,0.427,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Pb,6.3,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Th,2.32,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,U,0.696,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,La,8.96,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Ce,20.1,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Pr,2.54,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Nd,11.0,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Sm,2.48,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Eu,0.772,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Dy,2.33,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Yb,1.31,ppm,,Q-ICP-MS,Table 1
+HX12-08b,Gabbroic Diorite,Lu,0.187,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,SiO2,54.81,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,TiO2,0.89,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,Al2O3,14.87,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,Fe2O3,9.27,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,MnO,0.19,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,MgO,7.08,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,CaO,8.28,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,Na2O,3.22,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,K2O,1.21,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,P2O5,0.23,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,LOI,0.2,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,Total,100.24,wt%,,XRF/fused bead,Table 1
+HX12-08c,Gabbroic Diorite,Rb,22.2,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Sr,608.0,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Y,29.9,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Zr,91.4,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Nb,8.04,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Ba,369.0,ppm,,XRF,Table 1
+HX12-08c,Gabbroic Diorite,Cs,0.436,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Pb,4.22,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Th,2.3,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,U,0.47,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,La,13.3,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Ce,34.0,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Pr,4.69,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Nd,21.4,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Sm,5.27,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Eu,1.28,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Dy,4.74,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Yb,2.51,ppm,,Q-ICP-MS,Table 1
+HX12-08c,Gabbroic Diorite,Lu,0.357,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,SiO2,55.35,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,TiO2,1.24,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,Al2O3,18.27,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,Fe2O3,8.74,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,MnO,0.15,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,MgO,4.72,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,CaO,7.46,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,Na2O,3.05,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,K2O,1.11,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,P2O5,0.27,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,LOI,0.12,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,Total,100.48,wt%,,XRF/fused bead,Table 1
+HX12-12,Gabbroic Diorite,Rb,14.3,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Sr,756.0,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Y,31.2,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Zr,72.5,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Nb,7.2,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Ba,305.0,ppm,,XRF,Table 1
+HX12-12,Gabbroic Diorite,Cs,0.241,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Pb,23.9,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Th,2.53,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,U,0.396,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,La,16.5,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Ce,41.1,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Pr,5.59,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Nd,25.3,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Sm,5.73,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Eu,1.49,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Dy,4.86,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Yb,2.67,ppm,,Q-ICP-MS,Table 1
+HX12-12,Gabbroic Diorite,Lu,0.383,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,SiO2,48.38,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,TiO2,1.45,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,Al2O3,17.75,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,Fe2O3,8.48,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,MnO,0.11,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,MgO,8.49,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,CaO,9.43,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,Na2O,2.59,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,K2O,3.34,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,P2O5,0.74,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,LOI,0.26,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,Total,101.02,wt%,,XRF/fused bead,Table 1
+HX12-18,Amp gneiss,Rb,181.0,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Sr,947.0,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Y,26.6,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Zr,207.0,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Nb,47.4,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Ba,1290.0,ppm,,XRF,Table 1
+HX12-18,Amp gneiss,Cs,2.83,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Pb,5.78,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Th,12.4,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,U,1.0,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,La,72.5,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Ce,164.0,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Pr,16.5,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Nd,61.3,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Sm,10.2,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Eu,2.78,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Dy,4.89,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Yb,1.7,ppm,,Q-ICP-MS,Table 1
+HX12-18,Amp gneiss,Lu,0.231,ppm,,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,SiO2,50.04,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,TiO2,0.62,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,Al2O3,10.16,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,Fe2O3,9.15,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,MnO,0.17,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,MgO,13.22,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,CaO,15.0,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,Na2O,1.48,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,K2O,0.58,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,P2O5,0.05,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,LOI,0.19,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,Total,100.65,wt%,,XRF/fused bead,Table 1
+HX12-20,Amp gneiss,Rb,7.84,ppm,,XRF,Table 1
+HX12-20,Amp gneiss,Sr,216.0,ppm,,XRF,Table 1
+HX12-20,Amp gneiss,Y,,ppm,bdl,XRF,Table 1
+HX12-20,Amp gneiss,Zr,36.3,ppm,,XRF,Table 1
+HX12-20,Amp gneiss,Nb,2.46,ppm,,XRF,Table 1
+HX12-20,Amp gneiss,Ba,130.0,ppm,,XRF,Table 1
+HX12-20,Amp gneiss,Cs,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Pb,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Th,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,U,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,La,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Ce,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Pr,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Nd,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Sm,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Eu,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Dy,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Yb,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-20,Amp gneiss,Lu,,ppm,n.d.,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,SiO2,45.64,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,TiO2,1.53,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,Al2O3,15.39,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,Fe2O3,14.54,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,MnO,0.19,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,MgO,10.27,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,CaO,10.71,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,Na2O,1.82,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,K2O,0.66,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,P2O5,0.03,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,LOI,0.17,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,Total,100.94,wt%,,XRF/fused bead,Table 1
+HX12-21,Amp gneiss,Rb,15.8,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Sr,227.0,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Y,48.6,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Zr,42.4,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Nb,7.07,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Ba,141.0,ppm,,XRF,Table 1
+HX12-21,Amp gneiss,Cs,0.1658,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Pb,4.49,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Th,0.42,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,U,0.13,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,La,6.77,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Ce,26.3,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Pr,4.72,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Nd,26.0,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Sm,8.01,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Eu,1.33,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Dy,8.03,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Yb,3.64,ppm,,Q-ICP-MS,Table 1
+HX12-21,Amp gneiss,Lu,0.498,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,SiO2,58.66,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,TiO2,0.91,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,Al2O3,18.43,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,Fe2O3,7.46,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,MnO,0.13,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,MgO,2.73,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,CaO,5.77,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,Na2O,3.8,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,K2O,2.66,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,P2O5,0.23,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,LOI,0.12,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,Total,100.91,wt%,,XRF/fused bead,Table 1
+HX12-22,Amp gneiss,Rb,104.0,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Sr,398.0,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Y,50.7,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Zr,249.0,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Nb,18.6,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Ba,534.0,ppm,,XRF,Table 1
+HX12-22,Amp gneiss,Cs,4.58,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Pb,18.0,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Th,33.2,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,U,1.42,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,La,93.1,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Ce,182.0,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Pr,18.3,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Nd,63.9,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Sm,11.2,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Eu,1.96,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Dy,8.06,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Yb,3.82,ppm,,Q-ICP-MS,Table 1
+HX12-22,Amp gneiss,Lu,0.502,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,SiO2,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,TiO2,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,Al2O3,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,Fe2O3,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,MnO,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,MgO,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,CaO,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,Na2O,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,K2O,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,P2O5,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,LOI,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,Total,,wt%,n.d.,XRF/fused bead,Table 1
+HX12-PE,Grt gneiss,Rb,12.0,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Sr,27.7,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Y,5.34,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Zr,33.9,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Nb,1.07,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Ba,63.6,ppm,,XRF,Table 1
+HX12-PE,Grt gneiss,Cs,0.358,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Pb,0.13,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Th,0.36800419044228166,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,U,0.02909516425783551,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,La,8.18,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Ce,16.1,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Pr,1.78,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Nd,6.7,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Sm,1.28,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Eu,1.12,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Dy,,ppm,bdl,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Yb,0.52,ppm,,Q-ICP-MS,Table 1
+HX12-PE,Grt gneiss,Lu,0.092,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,SiO2,44.13,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,TiO2,0.65,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,Al2O3,14.34,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,Fe2O3,9.22,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,MnO,0.17,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,MgO,19.85,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,CaO,4.8,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,Na2O,0.57,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,K2O,6.15,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,P2O5,0.33,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,LOI,0.29,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,Total,100.5,wt%,,XRF/fused bead,Table 1
+HX12-23,Amphibolite,Rb,304.0,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Sr,24.3,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Y,21.9,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Zr,68.3,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Nb,2.59,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Ba,261.0,ppm,,XRF,Table 1
+HX12-23,Amphibolite,Cs,20.6,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Pb,2.46,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Th,2.77,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,U,1.17,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,La,11.9,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Ce,25.6,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Pr,3.71,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Nd,16.9,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Sm,4.07,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Eu,0.81,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Dy,3.28,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Yb,1.77,ppm,,Q-ICP-MS,Table 1
+HX12-23,Amphibolite,Lu,0.264,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,SiO2,55.77,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,TiO2,0.9,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,Al2O3,17.68,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,Fe2O3,7.31,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,MnO,0.13,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,MgO,4.68,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,CaO,8.5,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,Na2O,3.62,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,K2O,1.57,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,P2O5,0.35,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,LOI,0.25,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,Total,100.75,wt%,,XRF/fused bead,Table 1
+HX12-01,Basaltic  andesite,Rb,25.0,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Sr,1730.0,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Y,25.0,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Zr,97.6,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Nb,12.1,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Ba,587.0,ppm,,XRF,Table 1
+HX12-01,Basaltic  andesite,Cs,0.662,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Pb,48.0,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Th,4.76,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,U,0.924,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,La,30.8,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Ce,64.9,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Pr,7.5,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Nd,29.1,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Sm,5.11,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Eu,1.54,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Dy,3.84,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Yb,2.06,ppm,,Q-ICP-MS,Table 1
+HX12-01,Basaltic  andesite,Lu,0.304,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,SiO2,48.4,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,TiO2,1.1,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,Al2O3,17.77,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,Fe2O3,9.47,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,MnO,0.16,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,MgO,8.62,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,CaO,10.65,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,Na2O,2.59,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,K2O,0.77,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,P2O5,0.07,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,LOI,0.36,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,Total,99.95,wt%,,XRF/fused bead,Table 1
+HX12-19,Tuffaceous  sandstone,Rb,13.5,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Sr,580.0,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Y,19.0,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Zr,67.2,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Nb,2.06,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Ba,315.0,ppm,,XRF,Table 1
+HX12-19,Tuffaceous  sandstone,Cs,0.0821,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Pb,1.72,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Th,0.593,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,U,0.214,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,La,4.01,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Ce,10.1,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Pr,1.39,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Nd,6.65,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Sm,1.97,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Eu,0.673,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Dy,2.86,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Yb,1.7,ppm,,Q-ICP-MS,Table 1
+HX12-19,Tuffaceous  sandstone,Lu,0.247,ppm,,Q-ICP-MS,Table 1
